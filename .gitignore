@@ -64,4 +64,5 @@ desktop.ini
 
 coverage/
 TestResults/
+*.slnx
 

@@ -18,6 +18,15 @@ public class GestorPuntuacion : MonoBehaviour
         Instancia = this;
         DontDestroyOnLoad(gameObject);
     }
+    void OnEnable()
+    {
+        EnemyController.OnEnemigoDerrotado += AgregarPuntos;
+    }
+
+    void OnDisable()
+    {
+        EnemyController.OnEnemigoDerrotado -= AgregarPuntos;
+    }
 
     public void AgregarPuntos(int cantidad)
     {
