@@ -387,8 +387,97 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3134dd8a98d6c4f249225b68beb2ebac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1282014917}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3134dd8a98d6c4f249225b68beb2ebac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1282014916}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3134dd8a98d6c4f249225b68beb2ebac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1282014915}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3134dd8a98d6c4f249225b68beb2ebac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1282014914}
   m_SourcePrefab: {fileID: 100100000, guid: 3134dd8a98d6c4f249225b68beb2ebac, type: 3}
+--- !u!1 &1282014912 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3134dd8a98d6c4f249225b68beb2ebac, type: 3}
+  m_PrefabInstance: {fileID: 1282014911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1282014913 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 3134dd8a98d6c4f249225b68beb2ebac, type: 3}
+  m_PrefabInstance: {fileID: 1282014911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1282014914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282014912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ff0c5635b3f4f5bbb90515c89cb585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationController
+  _animator: {fileID: 1282014913}
+  _movement: {fileID: 1282014915}
+--- !u!114 &1282014915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282014912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f965948a24f874f5d98c0907c559cf21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovementController
+  _walkSpeed: 2
+  _runSpeed: 5
+  _gravity: -9.81
+  _rotSpeed: 10
+--- !u!114 &1282014916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282014912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c765bee880c2449f0a48dd1999f652a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InputHandler
+--- !u!143 &1282014917
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282014912}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.3
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &2058113941
 GameObject:
   m_ObjectHideFlags: 0
